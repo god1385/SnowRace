@@ -317,8 +317,8 @@ MonoBehaviour:
         byteData: 
         byteDataArray: 
       Version: 1.7.2
-  gizmoViewMode: 2
-  showBehaviorDesignerGizmo: 1
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 0
 --- !u!114 &7377223936383214472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1650,8 +1650,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7586119054971847070, guid: 7d372cfb3abbce141933ea1c97f90ef6, type: 3}
+      propertyPath: _scaleUpSpeed
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7586119054971847070, guid: 7d372cfb3abbce141933ea1c97f90ef6, type: 3}
       propertyPath: _scaleDownSpeed
-      value: 3
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 9110128126357496931, guid: 7d372cfb3abbce141933ea1c97f90ef6, type: 3}
       propertyPath: m_LocalPosition.y
