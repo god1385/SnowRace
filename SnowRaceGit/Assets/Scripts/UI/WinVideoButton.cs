@@ -21,9 +21,10 @@ public class WinVideoButton : MonoBehaviour
         
         foreach (var skin in _templatesData.SkinTemplates)
         {
+            Debug.Log(skin.IsBuyed);
             if(inventory.Contains(skin))
                 skin.Buy();
-            
+            Debug.Log(skin.IsBuyed);
             if (skin.IsBuyed == false)
             {
                 _allSkinsBuyed = false;

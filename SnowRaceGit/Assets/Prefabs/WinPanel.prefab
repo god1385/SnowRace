@@ -246,7 +246,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yeni Cilt
+  m_text: New Skin
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5009414adb03724a9692f179acda67e, type: 2}
   m_sharedMaterial: {fileID: -1314937537100446747, guid: d5009414adb03724a9692f179acda67e, type: 2}
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NO, THANKS
+  m_text: no, thanks
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5009414adb03724a9692f179acda67e, type: 2}
   m_sharedMaterial: {fileID: -1314937537100446747, guid: d5009414adb03724a9692f179acda67e, type: 2}
@@ -814,18 +814,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c68f291275b9a4ebad9bc4fc33c179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _allSkins:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _templatesData: {fileID: 0}
   _sceneLoader: {fileID: 8347719570143086158}
   _newSkinSprite: {fileID: 1602330302}
+  _skinSprite: {fileID: 0}
+  _spriteBackGround: {fileID: 0}
+  _newSkinVideo: {fileID: 0}
+  _noThanks: {fileID: 0}
 --- !u!1 &8218817056395553392
 GameObject:
   m_ObjectHideFlags: 0

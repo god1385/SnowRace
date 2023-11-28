@@ -8,17 +8,18 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WhiteBridge
-  m_Shader: {fileID: 10623, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords: []
-  m_InvalidKeywords:
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ValidKeywords:
   - _ALPHABLEND_ON
+  m_InvalidKeywords:
   - _DEFANIM_NOANIMATION
   - _DEFCLIPTYPE_Y
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -117,5 +118,5 @@ Material:
     - _DEFEdgesAmount: {r: 0, g: 0, b: 0, a: 0}
     - _DEFNoiseDirection: {r: 0.01, g: 0.01, b: 0.01, a: 0}
     - _Emission: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 218.8549, b: 212.83138, a: 1}
   m_BuildTextureStacks: []

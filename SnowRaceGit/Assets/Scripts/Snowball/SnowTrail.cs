@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SnowTrail : MonoBehaviour
@@ -9,8 +7,8 @@ public class SnowTrail : MonoBehaviour
     [SerializeField] private LayerMask _groundLayerMask;
     [SerializeField] private float _delayBetweenDrawing;
     [SerializeField] private Transform _snowBallRotation;
-    [SerializeField] private int  _sizeTrail;
-    [SerializeField] private float  _speedMoveDown;
+    [SerializeField] private int _sizeTrail;
+    [SerializeField] private float _speedMoveDown;
 
     private float _lastDrawingTime;
     private Vector3 _drawingPointPosition = new Vector3();
@@ -26,10 +24,11 @@ public class SnowTrail : MonoBehaviour
     {
         Ray ray = new Ray(transform.position, -Vector3.up * 100);
         RaycastHit hit;
-        
-        if (Physics.Raycast(ray, out hit,100, _groundLayerMask))
+
+        if (Physics.Raycast(ray, out hit, 100, _groundLayerMask))
         {
-            _drawingPointPosition = new Vector3(_snowBallRotation.transform.position.x, hit.point.y + _offsetOnGround, _snowBallRotation.transform.position.z);
+            _drawingPointPosition = new Vector3(_snowBallRotation.transform.position.x,
+                hit.point.y + _offsetOnGround, _snowBallRotation.transform.position.z);
 
             _trailRenderer.gameObject.transform.position = _drawingPointPosition;
             _lastDrawingTime = _delayBetweenDrawing;

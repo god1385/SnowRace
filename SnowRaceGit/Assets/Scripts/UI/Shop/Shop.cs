@@ -46,6 +46,7 @@ public class Shop : MonoBehaviour
     {
         var inventory = Inventory.Load();
 
+        Debug.Log(_skinViews.Count);
         Skin SelectedSkinView = _skinViews[inventory.SelectedGuid].Skin;
         SelectedSkinView.Buy();
         inventory.SelectSkin(SelectedSkinView);
